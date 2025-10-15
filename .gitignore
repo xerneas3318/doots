@@ -1,6 +1,10 @@
 # Ignore everything
 *
 
+# Ignore plugin directories
+tmux/plugins/
+
+
 # Track only these
 !nvim/
 !tmux/
