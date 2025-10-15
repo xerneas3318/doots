@@ -4,4 +4,6 @@
 # Track only these
 !nvim/
 !tmux/
+!kitty/
+!zsh/
 !.gitignore
