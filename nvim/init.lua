@@ -23,7 +23,6 @@ require("lazy").setup("plugins")
 -- Load base config
 require("config.options")
 require("config.keymaps")
-require("config.colors")
 
 
 -- Load plugins
