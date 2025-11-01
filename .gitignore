@@ -2,12 +2,16 @@
 *
 
 # Ignore plugin directories
-tmux/plugins/
-
+tmux/plugins/**
 
 # Track only these
 !nvim/
+!nvim/**
 !tmux/
+!tmux/tmux.conf
 !kitty/
+!kitty/**
 !zsh/
+!zsh/**
 !.gitignore
+!kanata
