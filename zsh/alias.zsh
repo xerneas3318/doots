@@ -52,9 +52,6 @@ alias setup='npm run setup'
 alias up='uv pip install'
 alias ss='source .venv/bin/activate'
 alias ff='fastfetch'
-alias btop='~/projects/btop-macos-gpu/bin/btop'
-alias fah='sudo spank --min-amplitude 0.15 --custom ~/Downloads/fah'
-alias mo='sudo spank --min-amplitude 0.15 --sexy'
 
 # =========================
 # SSH / Infra
