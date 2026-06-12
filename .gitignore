@@ -15,3 +15,5 @@ tmux/plugins/**
 !zsh/**
 !.gitignore
 !kanata
+!fastfetch/
+!fastfetch/**
