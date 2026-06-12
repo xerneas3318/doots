@@ -11,7 +11,13 @@
     }
   },
   "display": {
-    "showErrors": true
+    "showErrors": true,
+    "color": {
+      "title": "#d4a890",
+      "keys": "#a5cad3",
+      "separator": "#7da8b2",
+      "output": "default"
+    }
   },
   "modules": [
     "break",
