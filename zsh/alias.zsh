@@ -53,6 +53,8 @@ alias up='uv pip install'
 alias ss='source .venv/bin/activate'
 # fastfetch: native kitty-graphics image normally; chafa (Unicode blocks) inside
 # tmux, since the kitty graphics protocol can't pass through tmux.
+# unalias first so re-sourcing (rel) doesn't hit the alias/function name clash.
+unalias ff 2>/dev/null
 ff() {
   if [ -n "$TMUX" ]; then
     fastfetch --logo-type chafa "$@"
