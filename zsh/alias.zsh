@@ -51,7 +51,7 @@ alias vim='nvim'
 alias setup='npm run setup'
 alias up='uv pip install'
 alias ss='source .venv/bin/activate'
-alias ff='fastfetch'
+alias ff='DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib fastfetch'
 
 # =========================
 # SSH / Infra
