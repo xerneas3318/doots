@@ -51,7 +51,15 @@ alias vim='nvim'
 alias setup='npm run setup'
 alias up='uv pip install'
 alias ss='source .venv/bin/activate'
-alias ff='DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib fastfetch'
+# fastfetch: native kitty-graphics image normally; chafa (Unicode blocks) inside
+# tmux, since the kitty graphics protocol can't pass through tmux.
+ff() {
+  if [ -n "$TMUX" ]; then
+    fastfetch --logo-type chafa "$@"
+  else
+    fastfetch "$@"
+  fi
+}
 
 # =========================
 # SSH / Infra
