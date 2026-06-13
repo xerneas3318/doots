@@ -51,10 +51,18 @@ alias vim='nvim'
 alias setup='npm run setup'
 alias up='uv pip install'
 alias ss='source .venv/bin/activate'
-# fastfetch: kitty-icat (config) renders the image full-res in ghostty AND inside
-# tmux -- kitty's `kitten` handles the tmux graphics passthrough. Requires the
-# `kitten` binary, which ships with the `kitty` package (we keep using ghostty).
-alias ff='fastfetch'
+# fastfetch logo: ghostty renders the native kitty protocol (config default) with
+# correct text layout. Inside tmux that protocol can't pass through, so use
+# kitty-icat there (kitten wraps it in tmux passthrough).
+# unalias guards against the alias/function re-source clash.
+unalias ff 2>/dev/null
+ff() {
+  if [ -n "$TMUX" ]; then
+    fastfetch --logo-type kitty-icat "$@"
+  else
+    fastfetch "$@"
+  fi
+}
 
 # =========================
 # SSH / Infra
