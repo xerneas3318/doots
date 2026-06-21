@@ -4,7 +4,7 @@
     "source": "~/.config/fastfetch/images/fetch.png",
     "type": "kitty",
     "width": 50,
-    "height": 25,
+    "height": 28,
     "padding": {
       "top": 0,
       "right": 4
@@ -38,6 +38,8 @@
     "localip",
     "battery",
     "break",
-    "colors"
+    "colors",
+    "break",
+    "break"
   ]
 }
