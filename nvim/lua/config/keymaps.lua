@@ -30,3 +30,9 @@ keymap("n", "<leader>h", "<cmd>split<cr>", opts)
 -- Save / quit shortcuts
 keymap("n", "<leader>w", "<cmd>w<cr>", opts)
 keymap("n", "<leader>q", "<cmd>q<cr>", opts)
+
+-- System clipboard yank / paste
+keymap({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to clipboard" })
+keymap("n", "<leader>Y", '"+Y', { desc = "Yank line to clipboard" })
+keymap({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from clipboard" })
+keymap({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from clipboard" })
