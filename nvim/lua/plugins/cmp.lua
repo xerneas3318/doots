@@ -7,7 +7,10 @@ return {
     {
       "L3MON4D3/LuaSnip",
       version = "v2.*",
-      build = "make install_jsregexp",
+      -- don't clone submodules (breaks on old-git machines); the build step
+      -- fetches jsregexp itself, and jsregexp is optional so never fail on it
+      submodules = false,
+      build = "make install_jsregexp || true",
     },
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
