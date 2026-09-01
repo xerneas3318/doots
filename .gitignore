@@ -17,3 +17,7 @@ tmux/plugins/**
 !kanata
 !fastfetch/
 !fastfetch/**
+
+# Local nvim backups (keep out of the repo)
+nvim/old/
+nvim/backup-*/
